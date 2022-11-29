@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Instagram</title>
+    <script
+      src="https://kit.fontawesome.com/f568da4bb5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header_main">
+        <span class="logo_main">
+          <span class="logo"><img src="/public/logo.png" /> </span>
+          <i class="fas fa-angle-down"></i>
+        </span>
+        <div class="search_wrapper">
+          <div class="search_main">
+            <i class="far fa-search"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+          <i class="far fa-heart icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div class="main_and_suggest">
+        <div class="main_panel">
+          <section class="story_panel geist-border" id="story_panel">
+            <div class="pseudo_list"></div>
+            <!-- Story panel -->
+          </section>
+          <section class="articles_panel" id="article_cont"></section>
+        </div>
+        <div class="suggestion_panel">
+          <!-- Sugestion panel -->
+          <div class="user_account">
+            <!--User Account -->
+            <div class="user_account_main">
+              <div class="geist-border user_avatar">
+                <img src="/public/presh.jpg" />
+              </div>
+              <div class="user_names">
+                <span>Ogwara precious</span>
+                <span>presh_day</span>
+              </div>
+            </div>
+            <button class="util_btn">Switch</button>
+          </div>
+          <!-- Suggestion header -->
+          <header>
+            <label>Suggestions for you</label>
+            <span class="util_btn" style="color: rgb(38, 38, 38)">See All</span>
+          </header>
+          <!-- Suggestion main -->
+          <div class="suggestion_main" id="suggestmain"></div>
+          <footer>
+            <ul class="footer_list">
+              <a>About</a>
+              <a>Help</a>
+              <a>Press</a>
+              <a>API</a>
+              <a>Jobs</a>
+              <a>Privacy</a>
+              <a>Terms</a>
+              <a>Locations</a>
+              <a>Language</a>
+            </ul>
+            <div class="copy_right">&copy; 2022 INSTAGRAM FROM META</div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <div class="space_it"></div>
+    <aside class="md_nav">
+      <!-- Desktop and large screens nav -->
+      <div style="display: flex; flex-direction: column; height: 100%">
+        <!-- logo -->
+        <span class="md_logo"
+          ><i class="fab fa-instagram icon lcon_only_logo"></i
+        ></span>
+        <span class="logo_main lg_logo">
+          <span class="logo"><img src="/public/logo.png" /> </span>
+        </span>
+        <!-- Navs -->
+        <nav>
+          <a>
+            <i class="fas fa-home icon"></i>
+            <span class="link_label">Home</span>
+          </a>
+          <a>
+            <i class="fas fa-search icon"></i>
+            <span class="link_label">Search</span>
+          </a>
+          <a>
+            <i class="far fa-compass icon"></i>
+            <span class="link_label">Explore</span>
+          </a>
+          <a>
+            <i class="far fa-paper-plane icon"></i>
+            <span class="link_label">Messages</span>
+          </a>
+
+          <a>
+            <i class="far fa-heart icon"></i>
+            <span class="link_label">Notifications</span>
+          </a>
+          <a>
+            <i class="far fa-plus-square icon"></i>
+            <span class="link_label">Create</span>
+          </a>
+          <a>
+            <i class="fas fa-user-circle icon"></i>
+            <span class="link_label">Profile</span>
+          </a>
+        </nav>
+        <!-- Dropdown button -->
+        <div class="md_nav_foot">
+          <span class="drop_bars_cont">
+            <i class="fas fa-bars drop_bars"></i>
+            <span class="link_label">More</span></span
+          >
+        </div>
+      </div>
+    </aside>
+    <nav class="mobile_nav">
+      <!-- Mobile nav -->
+      <ul class="navs">
+        <a>
+          <i class="fas fa-home icon"></i>
+        </a>
+        <a>
+          <i class="far fa-compass icon"></i>
+        </a>
+        <a>
+          <i class="far fa-plus-square icon"></i>
+        </a>
+        <a>
+          <i class="far fa-paper-plane icon"></i>
+        </a>
+        <a>
+          <i class="fas fa-user-circle icon"></i>
+        </a>
+      </ul>
+    </nav>
+    <script src="main.js"></script>
+  </body>
+</html>
